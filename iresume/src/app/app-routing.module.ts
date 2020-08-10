@@ -9,8 +9,13 @@ const routes: Routes = [
     path: 'ir/menu',
     component: HambergerPage,
     children: [
+    //   {
+    //     path: '',
+    //     pathMatch: 'full',
+    //     redirectTo: 'landingPage'
+    // },
       {
-        path: '',
+        path: 'hamberger',
         loadChildren: () => import('./resume/hamberger/hamberger.module').then(m => m.HambergerPageModule)
       },
       {
@@ -24,6 +29,11 @@ const routes: Routes = [
 
     ]
   },
+  {
+    path: 'ir/menu',
+    loadChildren: () => import('./resume/landing-page/landing-page.module').then(m => m.LandingPagePageModule)
+  },
+  
   {
     path: 'ir3/menu',
     component: HambergerPage3,
@@ -56,18 +66,18 @@ const routes: Routes = [
     redirectTo: 'gatecode',
     pathMatch: 'full'
   },
-  {
-    path: 'landing-page',
-    loadChildren: () => import('./resume3/landing-page/landing-page.module').then( m => m.LandingPagePageModule)
-  },
-  {
-    path: 'hamberger',
-    loadChildren: () => import('./resume3/hamberger/hamberger.module').then( m => m.HambergerPageModule)
-  },
-  {
-    path: 'personalinfo',
-    loadChildren: () => import('./resume3/personalinfo/personalinfo.module').then( m => m.PersonalinfoPageModule)
-  },
+  // {
+  //   path: 'landing-page',
+  //   loadChildren: () => import('./resume3/landing-page/landing-page.module').then( m => m.LandingPagePageModule)
+  // },
+  // {
+  //   path: 'hamberger',
+  //   loadChildren: () => import('./resume3/hamberger/hamberger.module').then( m => m.HambergerPageModule)
+  // },
+  // {
+  //   path: 'personalinfo',
+  //   loadChildren: () => import('./resume3/personalinfo/personalinfo.module').then( m => m.PersonalinfoPageModule)
+  // },
 ];
 
 @NgModule({

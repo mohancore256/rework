@@ -17,7 +17,7 @@ export class GatecodePage implements OnInit {
   }
 
   ngOnInit() {
-   sessionStorage.setItem("menu","/menu/gatecode");
+   //sessionStorage.setItem("menu","/menu/gatecode");
    this.bodyTag.classList.add('bodybg-color');
    this.htmlTag.classList.add('bodybg-color');
   }
@@ -31,18 +31,18 @@ export class GatecodePage implements OnInit {
     console.log(this.gateCode);
     if(this.gateCode==2569){
       console.log("inside if");
-      sessionStorage.setItem("menu","ir/menu/landingPage");
-      sessionStorage.setItem("gatecode",this.gateCode.toString());
+      // sessionStorage.setItem("menu","ir/menu/landingPage");
+      // sessionStorage.setItem("gatecode",this.gateCode.toString());
       this.router.navigateByUrl('ir/menu/landingPage');
     }else if(this.gateCode==2563){
       console.log("inside if");
-      sessionStorage.setItem("menu","ir3/menu/landingPage");
-      sessionStorage.setItem("gatecode",this.gateCode.toString());
+      // sessionStorage.setItem("menu","ir3/menu/landingPage");
+      // sessionStorage.setItem("gatecode",this.gateCode.toString());
       this.router.navigateByUrl('ir3/menu/landingPage');
     }
     else{
      console.log("inside else");
-     sessionStorage.setItem("menu","menu/landingPage");
+    //  sessionStorage.setItem("menu","menu/landingPage");
        this.router.navigateByUrl('popup');
   }
   }

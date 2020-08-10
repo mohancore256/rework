@@ -9,12 +9,13 @@ import { Router } from '@angular/router';
 export class LandingPagePage implements OnInit {
 
   constructor(private router:Router) {
-    this.router.navigateByUrl(sessionStorage.getItem('menu'));
+    
    // sessionStorage.setItem("menu","ir/menu/landingPage");
    }
 
   ngOnInit() {
-    sessionStorage.setItem("menu","ir/menu/landingPage");
+    // sessionStorage.setItem("menu","ir3/menu/landingPage");
+    // this.router.navigateByUrl(sessionStorage.getItem('menu'));
   }
 
 }
