@@ -1,0 +1,19 @@
+<ion-grid><ion-row><ion-col> 
+ 
+  <ion-card color="primary appColor"> 
+   <ion-card-header>
+     
+     <ion-card-title style="text-align: center;">Gate Code</ion-card-title>
+     <ion-card-subtitle style="text-align: center;">To avoid anonymous traffic please enter the gate code </ion-card-subtitle>
+   </ion-card-header>
+ 
+   <ion-card-content>
+     <ion-item style=" text-align: center;border-radius: 10px;" >
+          <ion-input [(ngModel)]="gateCode"></ion-input>
+     </ion-item>
+    <ion-button (click)='gateCodeValidation()' class="ion-activatable ripple-parent buttonCustom jolly-btn"  expand="block" type="submit">Submit</ion-button>
+    </ion-card-content>
+ </ion-card>
+ 
+ </ion-col></ion-row></ion-grid>
+ 
