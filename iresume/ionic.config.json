@@ -1,0 +1,7 @@
+{
+  "name": "iresume",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
