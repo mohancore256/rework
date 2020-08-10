@@ -26,6 +26,26 @@ const routes: Routes = [
         path: 'myProfile',
         loadChildren: () => import('./resume/personalinfo/personalinfo.module').then( m => m.PersonalinfoPageModule)
       },
+      {
+        path: 'aboutApp',
+        loadChildren: () => import('./resume/about-app/about-app.module').then( m => m.AboutAppPageModule)
+      },
+      {
+        path: 'workExperience',
+        loadChildren: () => import('./resume/work-experience/work-experience.module').then( m => m.WorkExperiencePageModule)
+      },
+      {
+        path: 'technologies',
+        loadChildren: () => import('./resume/technologies/technologies.module').then( m => m.TechnologiesPageModule)
+      },
+      {
+        path: 'contact',
+        loadChildren: () => import('./resume/contact/contact.module').then( m => m.ContactPageModule)
+      },
+      {
+        path: 'myClient',
+        loadChildren: () => import('./resume/client/client.module').then( m => m.ClientPageModule)
+      },
 
     ]
   },
@@ -50,6 +70,26 @@ const routes: Routes = [
         path: 'myProfile',
         loadChildren: () => import('./resume3/personalinfo/personalinfo.module').then( m => m.PersonalinfoPageModule)
       },
+      {
+        path: 'aboutApp',
+        loadChildren: () => import('./resume3/about-app/about-app.module').then( m => m.AboutAppPageModule)
+      },
+      {
+        path: 'myClient',
+        loadChildren: () => import('./resume3/client/client.module').then( m => m.ClientPageModule)
+      },
+      {
+        path: 'contact',
+        loadChildren: () => import('./resume3/contact/contact.module').then( m => m.ContactPageModule)
+      },
+      {
+        path: 'technologies',
+        loadChildren: () => import('./resume3/technologies/technologies.module').then( m => m.TechnologiesPageModule)
+      },
+      {
+        path: 'workExperience',
+        loadChildren: () => import('./resume3/work-experience/work-experience.module').then( m => m.WorkExperiencePageModule)
+      },
 
     ]
   },
@@ -66,6 +106,16 @@ const routes: Routes = [
     redirectTo: 'gatecode',
     pathMatch: 'full'
   },
+ 
+  
+  // {
+  //   path: 'about-app',
+  //   loadChildren: () => import('./resume/about-app/about-app.module').then( m => m.AboutAppPageModule)
+  // },
+  // {
+  //   path: 'about-app',
+  //   loadChildren: () => import('./resume3/about-app/about-app.module').then( m => m.AboutAppPageModule)
+  // },
   // {
   //   path: 'landing-page',
   //   loadChildren: () => import('./resume3/landing-page/landing-page.module').then( m => m.LandingPagePageModule)

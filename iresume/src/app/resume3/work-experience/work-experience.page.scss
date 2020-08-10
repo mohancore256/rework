@@ -1,0 +1,61 @@
+ion-title{
+    font-weight: bold;
+  }
+  .appColor{
+  
+    color: white;
+      
+    --ion-color-primary: #22A39F;
+    --ion-color-primary-rgb: 34,163,159;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255,255,255;
+    --ion-color-primary-shade: #1e8f8c;
+    --ion-color-primary-tint: #38aca9;
+    }
+  
+  
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+      color: black;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  
+    header{
+      color: black;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  
+  //   ion-card:hover {
+  //     transform: scale(1.025);
+  //     border-style: solid;
+  // }
+  
+  .cardHead{
+    color: cadetblue;
+    font-weight: bold;
+  }
+  .cardContent{
+    color: black;
+  }
+  
+  .cardContentSubmenu{
+    color: cadetblue;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .cardContentSubmenuContent{
+    color: black;
+  }
+  

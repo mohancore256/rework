@@ -28,6 +28,41 @@ export class HambergerPage implements OnInit {
       icon:'person-outline',
       iconActive:'person-sharp',
     },
+    {
+      id:'3',
+      title:'Technologies',
+      url:'technologies',
+      icon:'ribbon-outline',
+      iconActive:'ribbon-sharp',
+    },
+    {
+      id:'4',
+      title:'Experience',
+      url:'workExperience',
+      icon:'newspaper-outline',
+      iconActive:'newspaper-sharp',
+    },
+    {
+      id:'5',
+      title:'Client',
+      url:'myClient',
+      icon:'trophy-outline',
+      iconActive:'trophy-sharp',
+    },
+    {
+      id:'6',
+      title:'Contact Me',
+      url:'contact',
+      icon:'mail-outline',
+      iconActive:'mail-sharp',
+    },
+    {
+      id:'7',
+      title:'About App',
+      url:'aboutApp',
+      icon:'help-circle-outline',
+      iconActive:'help-circle-sharp',
+    },
    
   ]
 
